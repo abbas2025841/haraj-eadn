@@ -7,6 +7,16 @@ channel = "stable-25_05"
 packages = ["flutter"]
 
 [workflows]
+runButton = "Flutter Dev Server"
+
+[[workflows.workflow]]
+name = "Flutter Dev Server"
+author = 47045408
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flutter run --web-port=5000 --web-hostname=0.0.0.0"
 
 [[ports]]
 localPort = 5000
