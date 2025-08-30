@@ -1,0 +1,13 @@
+modules = ["dart-3.8", "python-3.11"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["flutter"]
+
+[workflows]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
